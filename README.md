@@ -47,7 +47,10 @@ Open the java file and add the following lines:
     public void onCreate() {
         super.onCreate();
         BaasBox.Config config = new BaasBox.Config();
-        config.API_DOMAIN = "10.0.0.2"; // the host address
+        config.API_DOMAIN = "10.0.2.2"; 
+            // This "10.0.2.2" is the special alias IP of localhost for android emulators.
+            // cf.  (i.e., 127.0.0.1 on your development machine)
+            // http://developer.android.com/intl/ja/tools/help/emulator.html
         config.APP_CODE = "1234567890"; // your appcode
         config.HTTP_PORT = 9000; // your port
 
